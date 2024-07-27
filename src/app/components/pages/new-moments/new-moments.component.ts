@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './new-moments.component.css'
 })
 export class NewMomentsComponent {
-
+  btnText = "Compartilhar";
 }
