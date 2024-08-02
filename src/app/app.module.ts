@@ -11,6 +11,9 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { NewMomentsComponent } from './components/pages/new-moments/new-moments.component';
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MessagesService } from './services/messages.service';
 
 @NgModule({
   declarations: [
@@ -20,14 +23,17 @@ import { MomentFormComponent } from './components/moment-form/moment-form.compon
     AboutComponent,
     HomeComponent,
     NewMomentsComponent,
-    MomentFormComponent
+    MomentFormComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule,
+
   ],
   providers: [
     provideClientHydration()
